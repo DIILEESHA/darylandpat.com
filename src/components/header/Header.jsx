@@ -33,7 +33,7 @@ const Header = ({
               <h2 className="sub_heading">{subtitle}</h2>
             </>
           )}
-          <p className="short_para   jjjj">{description}</p>
+          <p className="short_para jjjj">{description}</p>
           {onlydetailpage && (
             <>
               <motion.div

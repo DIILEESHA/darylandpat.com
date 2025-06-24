@@ -67,7 +67,7 @@ const Soon = () => {
       viewport={{ once: true }}
     >
       <motion.h2
-        className="main_heading"
+        className="main_heading mosam"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1 }}

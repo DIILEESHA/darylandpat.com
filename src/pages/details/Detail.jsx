@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import Header from "../../components/header/Header";
 import "./details.css";
+import { Link } from "react-router-dom";
 
 const Details = () => {
   return (
@@ -100,7 +101,10 @@ const Details = () => {
               }}
               whileTap={{ scale: 0.98 }}
             >
-              <a target="_blank" href="https://www.secretsresorts.com/the-vine">
+              <a
+                target="_blank"
+                href="https://www.hyattinclusivecollection.com/en/resorts-hotels/secrets/"
+              >
                 View Resort
               </a>
             </motion.button>
@@ -310,9 +314,7 @@ const Details = () => {
                 }}
                 whileTap={{ scale: 0.98 }}
               >
-                <a href="#rsvp" target="_blank" rel="noopener noreferrer">
-                Rsvp Now
-                </a>
+                <Link to="/rsvp">Rsvp Now</Link>
               </motion.button>
             </motion.div>
           </div>

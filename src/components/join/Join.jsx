@@ -32,7 +32,7 @@ const Join = () => {
           viewport={{ once: true }}
         >
           <h1 className="main_heading">Our Story</h1>
-          <h2 className="sub_heading">
+          <h2 className="short_para ">
         Welcome to the Next Chapter of Our Love Story
           </h2>
 

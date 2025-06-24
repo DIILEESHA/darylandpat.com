@@ -96,6 +96,10 @@
   .soon_grid {
     gap: 20px;
   }
+  .mosam{
+    /* font-weight: bold; */
+    padding: 0 45px;
+  }
   .dd {
     display: none;
   }
