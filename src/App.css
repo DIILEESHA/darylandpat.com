@@ -1,0 +1,42 @@
+/* Global CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+button{
+  background-color: #333!important;
+  border-radius: 0!important;
+}
+@font-face {
+  font-family: "engage";
+  src: url("../fonts/Engagement.ttf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "hal";
+  src: url("../fonts/Lato-Regular.ttf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "made";
+  src: url("../fonts/made.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --primary: #1e201e;
+  --secondary: #3c3d37;
+  --accent: #697565;
+  --back: #eff3ea;
+}
+
+a {
+  text-decoration: none;
+
+  color: inherit;
+}

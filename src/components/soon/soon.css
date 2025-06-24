@@ -1,0 +1,128 @@
+.soon_container {
+  background-image: url("https://i.imgur.com/fPjrTf4.png");
+  width: 100%;
+  /* height: 80vh; */
+  padding: 80px 80px;
+  background-position: center center;
+  /* background-color: aliceblue; */
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.soon_grid {
+  /* margin-top: -200px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.soon_timer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.soon_digit {
+  font-family: "hal";
+  color: var(--primary);
+  /* padding: 20px; */
+  /* background-color: var(--primary); */
+  font-size: 50px;
+  color: #fff;
+  font-weight: 100 !important;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.soon_title {
+  text-transform: uppercase;
+  font-family: "made";
+  font-weight: 500;
+}
+
+.count {
+  font-family: "engage";
+  font-size: 50px;
+  font-weight: 300;
+  /* font-weight: 300; */
+  color: var(--primary);
+}
+
+.count_para {
+  font-family: "hal";
+  font-size: 18px;
+  line-height: 150%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 70%;
+  text-align: center;
+}
+.gt {
+  /* margin-top: 30px; */
+  margin-bottom: 10px;
+  font-family: "made";
+  font-weight: 300;
+}
+
+.ones {
+  /* padding: 20px; */
+}
+.digit-container {
+  display: flex;
+  gap: 5px;
+}
+
+.digit {
+  background-color:#333;
+  color: white;
+  padding: 10px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  font-weight: bold;
+  border-radius: 8px;
+  text-align: center;
+}
+@media screen and (max-width: 1000px) {
+  .digit {
+    font-size: 20px;
+  }
+  .soon_grid {
+    gap: 20px;
+  }
+  .dd {
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  .digit {
+    font-size: 20px;
+  }
+  .soon_grid {
+    gap: 20px;
+    padding: 0 100px;
+  }
+
+  .soon_container {
+    padding: 50px 0;
+    overflow: hidden;
+  }
+  .dd {
+    display: none;
+  }
+}
+@media screen and (max-width: 472px) {
+  .ll {
+    display: none;
+  }
+
+  .soon_container {
+    background-size: contain;
+  }
+}

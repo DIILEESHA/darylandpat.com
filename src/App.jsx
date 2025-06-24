@@ -1,0 +1,33 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import "./App.css";
+import Footer from "./components/footer/Footer";
+import Navbar from "./components/nav/Navbar";
+import Home from "./pages/home/Home";
+import Details from "./pages/details/Details";
+import Scrolltotop from "../Scrolltotop";
+import Guestbook from "./pages/guest/Guestbook";
+import RSVPForm from "./pages/guest/RSVPForm";
+import Dashboard from "./pages/dashboard/Dashboard";
+
+function App() {
+
+  // Check if the current route is the Dashboard page
+  const isDashboard = location.pathname === "/dashboard";
+
+  return (
+    <Router>
+      {!isDashboard && <Navbar />} {/* Only show Navbar if not on Dashboard */}
+      <Scrolltotop />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/details" element={<Details />} />
+        <Route path="/guest-book" element={<Guestbook />} />
+        <Route path="/rsvp" element={<RSVPForm />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+      </Routes>
+      {!isDashboard && <Footer />} {/* Only show Footer if not on Dashboard */}
+    </Router>
+  );
+}
+
+export default App;

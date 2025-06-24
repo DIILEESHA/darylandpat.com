@@ -1,0 +1,303 @@
+.guestbook_container {
+  width: 100%;
+  padding: 80px 270px;
+  min-height: 100vh;
+  background-color: var(--light-bg);
+  position: relative;
+  overflow: hidden;
+}/* Radio Button Column Layout */
+.radio_options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.radio_option {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  padding-left: 30px;
+  min-height: 24px;
+}
+
+.radio_option input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.radio_custom {
+  position: absolute;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  background-color: white;
+  border: 2px solid #ddd;
+  border-radius: 50%;
+  transition: var(--transition);
+}
+
+.radio_option:hover .radio_custom {
+  border-color: var(--primary);
+}
+
+.radio_option input[type="radio"]:checked ~ .radio_custom {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  box-shadow: inset 0 0 0 3px white;
+}
+
+/* Optional: Add some spacing between radio groups */
+.form_input_section + .form_input_section {
+  margin-top: 20px;
+}
+
+/* Floral decorative elements */
+.guestbook_container::before {
+  content: "";
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  width: 100px;
+  height: 100px;
+  background: url('https://i.imgur.com/l8MLxbM.png') no-repeat;
+  background-size: contain;
+  opacity: 0.3;
+  z-index: 0;
+}
+
+.guestbook_container::after {
+  content: "";
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  width: 100px;
+  height: 100px;
+  background: url('https://i.imgur.com/MFGRQdH.png') no-repeat;
+  background-size: contain;
+  opacity: 0.3;
+  z-index: 0;
+}
+
+.form_container {
+  padding: 40px;
+  background-color: var(--white);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  position: relative;
+  z-index: 1;
+  border-top: 3px solid var(--primary);
+}
+
+.donal {
+  margin-top: 10px;
+  width: 100%;
+}
+
+.message_name {
+  font-family: "made";
+  font-weight: 300;
+  font-size: 17px;
+  color: var(--primary);
+}
+
+.message_text {
+  font-family: "hal";
+  font-size: 16px;
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.cra {
+  margin: 10px 0;
+}
+
+.message_card {
+  display: flex;
+  gap: 15px;
+  padding: 15px 0;
+  align-items: flex-start;
+  margin-bottom: 15px;
+  border-bottom: 1px solid rgba(255, 127, 80, 0.2);
+  transition: var(--transition);
+  position: relative;
+}
+
+.message_card:hover {
+  transform: translateX(5px);
+}
+
+.message_card::before {
+  content: "❀";
+  position: absolute;
+  left: -25px;
+  color: var(--primary);
+  opacity: 0;
+  transition: var(--transition);
+}
+
+.message_card:hover::before {
+  opacity: 1;
+  left: -15px;
+}
+
+.form_input_section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.input_label {
+  font-family: "made";
+  font-weight: 300;
+  font-size: 17px;
+  margin-bottom: 10px;
+  color: var(--text);
+}
+
+.guest_input {
+  margin-bottom: 10px;
+  background-color: transparent;
+  font-family: "hal";
+  font-size: 16px;
+  font-weight: 300;
+  outline: none;
+  border: 1px solid rgba(51, 51, 51, 0.2);
+  padding: 12px 15px;
+  border-radius: 4px;
+  transition: var(--transition);
+}
+
+.guest_input:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 2px rgba(255, 127, 80, 0.2);
+}
+
+/* Submit button styling */
+.guest_submit {
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-family: "made";
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: var(--transition);
+  margin-top: 10px;
+  align-self: flex-start;
+}
+
+.guest_submit:hover {
+  background-color: #e67143;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 127, 80, 0.3);
+}
+
+/* Section title styling */
+.rwe {
+  font-family: "engage", cursive;
+  font-size: 2.5rem;
+  color: var(--primary);
+  margin-bottom: 20px;
+  text-align: center;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.rwe::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 2px;
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+}
+
+@media screen and (max-width: 1134px) {
+  .guestbook_container {
+    padding: 60px 150px;
+  }
+  
+  .guestbook_container::before,
+  .guestbook_container::after {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .laqw {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 805px) {
+  .guestbook_container {
+    padding: 40px 20px;
+  }
+  
+  .guestbook_container::before,
+  .guestbook_container::after {
+    display: none;
+  }
+  
+  .rwe {
+    font-size: 2rem;
+    line-height: 130%;
+    margin-bottom: 15px;
+  }
+  
+  .form_container {
+    padding: 25px;
+  }
+  
+  .laqw {
+    width: 100%;
+  }
+  
+  .message_card::before {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .guestbook_container {
+    padding: 30px 15px;
+  }
+  
+  .form_container {
+    padding: 20px;
+  }
+  
+  .rwe {
+    font-size: 1.8rem;
+  }
+  
+  .guest_input {
+    padding: 10px 12px;
+  }
+  
+  .guest_submit {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Animation for messages */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.message_card {
+  animation: fadeIn 0.5s ease-out forwards;
+}

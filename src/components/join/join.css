@@ -1,0 +1,333 @@
+.join_container {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, rgba(255,127,80,0.03) 0%, rgba(245,245,220,0.03) 100%);
+  justify-content: center;
+  min-height: 100vh;
+  padding: 80px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Enhanced Floral Elements with Animation */
+.join_container::before,
+.join_container::after {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 0;
+  opacity: 0.7;
+  transition: all 0.5s ease;
+}
+
+.join_container::before {
+  top: 5%;
+  left: 5%;
+  background-image: url('https://i.imgur.com/l8MLxbM.png');
+  z-index: 100;
+  animation: float 6s ease-in-out infinite;
+}
+
+.join_container::after {
+  z-index: 100;
+  bottom: 5%;
+  border-radius: 50%;
+  opacity: 1;
+  right: 5%;
+  background-image: url('https://i.imgur.com/MFGRQdH.png');
+  animation: float 8s ease-in-out infinite 1s;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+
+.join_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+.bala {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 40px;
+}
+
+.join_img {
+  width: 100%;
+  height: 100vh;
+  max-height: 700px;
+  object-fit: cover;
+  border-radius: var(--border-radius);
+  box-shadow: 
+    0 15px 35px rgba(0, 0, 0, 0.1),
+    0 5px 15px rgba(255, 127, 80, 0.2);
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+
+.join_img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    45deg, 
+    rgba(255,127,80,0.1) 0%, 
+    rgba(245,245,220,0.1) 100%
+  );
+  z-index: 1;
+}
+
+.join_img:hover {
+  transform: scale(1.01);
+  box-shadow: 
+    0 20px 50px rgba(0, 0, 0, 0.15),
+    0 10px 20px rgba(255, 127, 80, 0.3);
+}
+
+.join_form {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 50px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(8px);
+  border-top: 3px solid var(--primary);
+}
+
+.join_form h2 {
+  font-family: "engage", cursive;
+  font-size: 2.8rem;
+  color: var(--primary);
+  margin-bottom: 30px;
+  text-align: center;
+  position: relative;
+}
+
+.join_form h2::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 2px;
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+}
+
+.read_more_link {
+  margin: 15px 0;
+  font-family: "made";
+  color: var(--primary);
+  transition: var(--transition);
+  display: inline-flex;
+  align-items: center;
+  font-size: 1.1rem;
+}
+
+.read_more_link::after {
+  content: "→";
+  margin-left: 8px;
+  transition: var(--transition);
+}
+
+.read_more_link:hover {
+  color: var(--text);
+  transform: translateX(5px);
+}
+
+.read_more_link:hover::after {
+  margin-left: 12px;
+}
+
+/* Enhanced Form Elements */
+.form_group {
+  margin-bottom: 25px;
+}
+
+.form_label {
+  display: block;
+  font-family: "made";
+  font-size: 1rem;
+  color: var(--text);
+  margin-bottom: 8px;
+  padding-left: 10px;
+  position: relative;
+}
+
+.form_label::before {
+  content: "❀";
+  position: absolute;
+  left: -5px;
+  color: var(--primary);
+  font-size: 0.8rem;
+}
+
+.form_input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid rgba(51, 51, 51, 0.2);
+  border-radius: 6px;
+  font-family: "hal";
+  font-size: 1rem;
+  transition: var(--transition);
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.form_input:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(255, 127, 80, 0.2);
+  outline: none;
+}
+
+.submit_btn {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 14px 30px;
+  font-family: "made";
+  font-size: 1.1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: var(--transition);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 15px rgba(255, 127, 80, 0.3);
+}
+
+.submit_btn:hover {
+  background: #e67143;
+  transform: translateY(-2px);
+  box-shadow: 0 7px 20px rgba(255, 127, 80, 0.4);
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 1150px) {
+  .join_container {
+    padding: 60px 40px;
+  }
+  
+  .join_grid {
+    gap: 40px;
+  }
+  
+  .join_img {
+    height: 80vh;
+  }
+  
+  .join_form {
+    padding: 40px;
+  }
+}
+
+@media screen and (max-width: 970px) {
+  .join_container {
+    padding: 50px 30px;
+  }
+  .cx{
+width: 100%;  }
+  .join_grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .join_container::after {
+    z-index: 0;
+    bottom: 0;
+  }
+  .join_img {
+    height: 60vh;
+    max-height: 500px;
+    order: 2;
+  }
+  
+  .bala {
+    order: 1;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .join_container {
+    padding: 40px 20px;
+  }
+  
+  .join_form {
+    padding: 30px;
+  }
+  
+  .join_form h2 {
+    font-size: 2.2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .join_container {
+    padding: 30px 15px;
+  }
+  
+  .join_form {
+    padding: 25px;
+  backdrop-filter: none;
+    background: white;
+  }
+  
+  .join_form h2 {
+    font-size: 2rem;
+  }
+  
+  .form_input {
+    padding: 10px 12px;
+  }
+  
+  .submit_btn {
+    width: 100%;
+    padding: 12px;
+  }
+}
+
+/* Animation Enhancements */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.join_form {
+  animation: fadeInUp 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.join_img {
+  animation: fadeInLeft 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}

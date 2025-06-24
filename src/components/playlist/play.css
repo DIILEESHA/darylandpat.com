@@ -1,0 +1,19 @@
+.dena {
+  width: 70%;
+  text-align: center;
+  margin: 0 auto 30px auto;
+}
+
+.play_container {
+  padding: 50px;
+  background-color: var(--back);
+}
+@media screen and (max-width: 1000px) {
+  .play_container {
+    padding: 50px 10px;
+  }
+
+  .cxp{
+    width: 100%;
+  }
+}
