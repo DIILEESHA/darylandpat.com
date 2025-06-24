@@ -11,7 +11,6 @@ import Dashboard from "./pages/dashboard/Dashboard";
 
 function App() {
 
-  // Check if the current route is the Dashboard page
   const isDashboard = location.pathname === "/dashboard";
 
   return (
