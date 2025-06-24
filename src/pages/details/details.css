@@ -333,7 +333,7 @@
 /* Color Section Styles */
 .color-section {
   text-align: center;
-  background-color: var(--secondary);
+  background-color: #eff3ea;
   display: flex;
   flex-direction: column;
 }

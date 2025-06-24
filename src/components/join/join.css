@@ -1,12 +1,9 @@
 .join_container {
   display: flex;
   align-items: center;
-  background: linear-gradient(
-    135deg,
-    rgba(255, 127, 80, 0.03) 0%,
-    rgba(245, 245, 220, 0.03) 100%
-  );
+  background: #eff3ea;
   justify-content: center;
+  margin-top: 40px;
   min-height: 100vh;
   padding: 80px;
   position: relative;
