@@ -73,7 +73,7 @@ const Soon = () => {
         transition={{ duration: 1 }}
         viewport={{ once: true }}
       >
-Counting Down to Daryl & Pat's Big Day!
+        Counting Down to Daryl & Pat's Big Day!
       </motion.h2>
       <motion.p
         className="count_para"
@@ -82,7 +82,7 @@ Counting Down to Daryl & Pat's Big Day!
         transition={{ duration: 1, delay: 0.2 }}
         viewport={{ once: true }}
       >
-     Saturday, October 24, 2026
+        Saturday, October 24, 2026
       </motion.p>
       <motion.h2
         className="main_heading gt"
@@ -136,6 +136,33 @@ Counting Down to Daryl & Pat's Big Day!
           <h3 className="soon_title">Sec</h3>
         </motion.div>
       </div>
+
+      {/* ADD THIS REGISTRY SECTION BELOW */}
+      <motion.div
+        className="registry_section"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, delay: 0.8 }}
+        viewport={{ once: true }}
+        style={{ marginTop: "30px", textAlign: "center" }}
+      >
+        <p
+          style={{ textAlign: "center", marginTop: "20px" }}
+          className="short_para dena cxp"
+        >
+          If you'd like to honor us with something extra, we’ve created a Zola
+          registry filled with thoughtful gifts, travel experiences, and
+          honeymoon contributions.
+        </p>
+        <a
+          href="https://www.zola.com/registry/darylandpatricia"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="rsvp_btn"
+        >
+          Explore Our Registry
+        </a>
+      </motion.div>
     </motion.div>
   );
 };
