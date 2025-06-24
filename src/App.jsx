@@ -3,11 +3,11 @@ import "./App.css";
 import Footer from "./components/footer/Footer";
 import Navbar from "./components/nav/Navbar";
 import Home from "./pages/home/Home";
-import Details from "./pages/details/Details";
 import Scrolltotop from "../Scrolltotop";
 import Guestbook from "./pages/guest/Guestbook";
 import RSVPForm from "./pages/guest/RSVPForm";
 import Dashboard from "./pages/dashboard/Dashboard";
+import Details from "./pages/details/Details";
 
 function App() {
 
