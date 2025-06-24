@@ -15,7 +15,7 @@ function App() {
 
   return (
     <Router>
-      {!isDashboard && <Navbar />} {/* Only show Navbar if not on Dashboard */}
+      {!isDashboard && <Navbar />} 
       <Scrolltotop />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -24,7 +24,7 @@ function App() {
         <Route path="/rsvp" element={<RSVPForm />} />
         <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
-      {!isDashboard && <Footer />} {/* Only show Footer if not on Dashboard */}
+      {!isDashboard && <Footer />} 
     </Router>
   );
 }
