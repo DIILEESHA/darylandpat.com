@@ -7,7 +7,7 @@ import Scrolltotop from "../Scrolltotop";
 import Guestbook from "./pages/guest/Guestbook";
 import RSVPForm from "./pages/guest/RSVPForm";
 import Dashboard from "./pages/dashboard/Dashboard";
-import Details from "./pages/details/Details";
+import Details from "./pages/details/Detail";
 
 function App() {
 
