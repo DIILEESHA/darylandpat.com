@@ -61,7 +61,7 @@ const Join = () => {
                 connection — and a reason to smile every morning.
                 <br />
                 <br />
-                Our first date? August 21, 2018. A simple Netflix night that
+                Our first date, August 21, 2018. A simple Netflix night that
                 felt easy and right. Date two — dinner and a movie — was when we
                 both realized this was real. Since then, we’ve grown together.
                 We’ve laughed endlessly, supported each other quietly and

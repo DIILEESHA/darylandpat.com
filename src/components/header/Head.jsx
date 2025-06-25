@@ -11,7 +11,7 @@ const Head = () => {
         subtitle="Join Us for Our Special Day"
         description="We're thrilled to celebrate our love with you in beautiful Cancun!"
         buttonText="RSVP Now"
-        imageUrl="https://i.imgur.com/12QvA8D.jpeg"
+        imageUrl="https://i.imgur.com/2qnGVOX.png"
         star="https://i.imgur.com/l8MLxbM.png"
         star2="https://i.imgur.com/MFGRQdH.png"
         onlydetailpage={false}

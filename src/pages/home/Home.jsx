@@ -15,7 +15,7 @@ const Home = () => {
       <Head />
       <Join id="" />
       <Soon />
-      <Play id="playlist" />
+      {/* <Play id="playlist" /> */}
     </div>
   );
 };
