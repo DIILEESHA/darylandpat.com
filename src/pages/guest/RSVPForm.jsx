@@ -67,7 +67,7 @@ const RSVPForm = () => {
       
       <h2 className="main_heading rwe">RSVP for Our Cancun Wedding</h2>
       <p className="short_para laqw">
-        Please respond by October 1, 2026. We can't wait to celebrate with you!
+        Please respond by August 1, 2025. We can't wait to celebrate with you!
       </p>
 
       <div className="form_container">
