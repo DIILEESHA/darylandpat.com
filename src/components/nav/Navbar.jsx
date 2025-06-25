@@ -89,12 +89,12 @@ const Navbar = () => {
             >
               Countdown
             </li>
-            <li
+            {/* <li
               className="mobile_li"
               onClick={() => handleNavigation("/", "playlist")}
             >
               Playlist
-            </li>
+            </li> */}
             <li
               className="mobile_li"
               onClick={() => handleNavigation("/rsvp", "")}
@@ -124,12 +124,12 @@ const Navbar = () => {
           >
             Countdown
           </li>
-          <li
+          {/* <li
             className="web_li"
             onClick={() => handleNavigation("/", "playlist")}
           >
             Playlist
-          </li>
+          </li> */}
           <li className="web_li">
             <Link to="/rsvp">RSVP</Link>
           </li>
